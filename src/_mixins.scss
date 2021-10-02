@@ -9,12 +9,12 @@
   line-height: $li-ht;
 }
 
-@mixin contentStyles($width, $float) {
+@mixin content-styles($width, $float) {
   width: $width;
   float: $float;
 }
 
-@mixin breakAt($args) {
+@mixin break-at($args) {
   @if length($args) == 1 {
     @media (max-width: nth($args, 1)) {
       @content;
@@ -22,12 +22,12 @@
   }
 }
 
-@mixin widthAndHeight($width, $height) {
+@mixin width-height($width, $height) {
   width: $width;
   height: $height;
 }
 
 @mixin navbar($width, $height, $float) {
-  @include widthAndHeight($width, $height);
+  @include width-height($width, $height);
   float: $float;
 }

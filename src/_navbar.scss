@@ -3,11 +3,11 @@ figure {
   display: block;
   margin: 0;
   @include navbar(400px, 190px, left);
-  @include breakAt(959px) {
+  @include break-at(959px) {
     @include navbar(inherit, 140px, none);
     background-position: center;
   }
-  @include breakAt(459px) {
+  @include break-at(459px) {
     background-size: contain;
     height: 100px;
   }
@@ -15,11 +15,11 @@ figure {
 
 nav {
   @include navbar(540px, 190px, left);
-  @include breakAt(959px) {
+  @include break-at(959px) {
     @include navbar(inherit, 50px, none);
     text-align: center;
   }
-  @include breakAt(459px) {
+  @include break-at(459px) {
     margin-bottom: 40px !important;
   }
   text-align: right;
@@ -43,17 +43,17 @@ nav {
         }
       }
 
-      @include breakAt(959px) {
+      @include break-at(959px) {
         font-size: 1em;
         margin: 0 10px;
       }
-      @include breakAt(767px) {
+      @include break-at(767px) {
         font-size: 0.8em;
         margin: 0 5px;
       }
     }
 
-    @include breakAt(959px) {
+    @include break-at(959px) {
       margin-top: 0;
     }
   }
